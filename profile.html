@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flowdesk | Profile</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="profile-page">
+
+<div id="sidebarOverlay"></div>
+
+<!-- =====================================================
+     SIDEBAR
+     ===================================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-logo">
+
+        <img class="logo-image"
+             src="log.png"
+             alt="Flowdesk">
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <div class="nav-section-title">
+            Workspace
+        </div>
+
+        <a href="index.html" class="sidebar-link">
+            <i class="bi bi-speedometer2"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="projects.html" class="sidebar-link">
+            <i class="bi bi-kanban"></i>
+            <span>Projects</span>
+        </a>
+
+
+        <div class="nav-section-title mt-3">
+            Account
+        </div>
+
+        <a href="notifications.html" class="sidebar-link">
+            <i class="bi bi-bell"></i>
+            <span>Notifications</span>
+        </a>
+
+        <a href="profile.html" class="sidebar-link active">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile</span>
+        </a>
+
+        <a href="#" class="sidebar-link logout-btn">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Logout</span>
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+
+        <div class="sidebar-user">
+
+            <div class="avatar employee-avatar-sync">
+                SG
+            </div>
+
+            <div class="sidebar-user-info">
+                <div class="sidebar-user-name">
+                    Sachin Gond
+                </div>
+
+                <div class="sidebar-user-role">
+                    Employee
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     MAIN WRAPPER
+     ===================================================== -->
+
+<div class="main-wrapper">
+
+
+    <!-- =================================================
+         TOPBAR
+         ================================================= -->
+
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <button
+                class="sidebar-toggle"
+                id="sidebarToggle">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <h5 class="page-heading">
+                Profile
+            </h5>
+
+        </div>
+
+
+        <div class="topbar-search">
+
+            <i class="bi bi-search"></i>
+
+            <input
+                type="text"
+                placeholder="Search...">
+
+        </div>
+
+
+        <div class="topbar-right">
+
+            <button
+                class="notification-btn"
+                id="themeToggle">
+
+                <i class="bi bi-moon"></i>
+
+            </button>
+
+
+            <a
+                href="notifications.html"
+                class="notification-btn">
+
+                <i class="bi bi-bell"></i>
+
+                <span class="notification-badge">
+                    4
+                </span>
+
+            </a>
+
+
+            <div class="user-menu">
+
+                <div class="avatar employee-avatar-sync">
+                   SG
+                </div>
+
+                <div class="user-info">
+
+                    <div class="user-name">
+                       Sachin Gond
+                    </div>
+
+                    <div class="user-role">
+                        Employee
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =================================================
+         PAGE CONTENT
+         ================================================= -->
+
+    <main class="page-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="page-header">
+
+            <div>
+
+                <h1 class="page-title">
+                    My Profile
+                </h1>
+
+                <p class="page-subtitle">
+                    View And Manage Your Flowdesk Profile.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             PROFILE HEADER CARD
+             ================================================= -->
+
+        <div class="card profile-header-card mb-4">
+
+            <div class="card-body">
+
+                <div class="profile-main">
+
+
+                    <div class="profile-avatar-wrapper">
+
+                        <div class="profile-avatar employee-avatar-sync">
+                            SG
+                        </div>
+
+                        <button
+                            class="profile-camera"
+                            id="changePhotoBtn"
+                            title="Change profile photo">
+
+                            <i class="bi bi-camera-fill"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-main-info">
+
+                        <h2 id="profileHeaderName">
+                            Sachin Gond
+                        </h2>
+
+                        <p class="profile-role">
+                            Junior Software Engineer
+                        </p>
+
+                        <div class="profile-meta">
+
+                            <span id="profileHeaderEmail">
+                                <i class="bi bi-envelope me-1"></i>
+                                sachingond0880@gmail.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-header-actions">
+
+                        <button
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editProfileModal">
+
+                            <i class="bi bi-pencil me-1"></i>
+
+                            Edit Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             PROFILE CONTENT
+             ================================================= -->
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                 PERSONAL / WORK INFORMATION
+                 ================================================= -->
+
+            <div class="col-lg-8">
+
+                <div class="card h-100">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h5 class="mb-1">
+                                Profile Information
+                            </h5>
+
+                            <p class="text-muted small mb-0">
+                                Your Project Management Information
+                            </p>
+
+                        </div>
+
+                        <i class="bi bi-person-lines-fill card-header-icon"></i>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="row g-4">
+
+
+                            <!-- NAME -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Full Name
+                                </label>
+
+                                <div id="profileFullName" class="profile-value">
+                                    Sachin Gond
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- EMAIL -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Email
+                                </label>
+
+                                <div id="profileEmailDisplay" class="profile-value">
+                                    sachingond0880@gmail.com
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMPLOYEE ID -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Employee ID
+                                </label>
+
+                                <div class="profile-value">
+                                    MYHR042
+                                </div>
+
+                            </div>
+
+
+                            <!-- CONTACT NUMBER -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Contact Number
+                                </label>
+
+                                <div class="profile-value">
+                                    8277029023
+                                </div>
+
+                            </div>
+
+
+                            <!-- ROLE -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Role
+                                </label>
+
+                                <div class="profile-value">
+
+                                    <span class="badge bg-primary-subtle text-primary">
+                                        Junior Software Engineer
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- DEPARTMENT -->
+
+                            <div class="col-md-6">
+
+                                <label class="profile-label">
+                                    Department
+                                </label>
+
+                                <div id="profileDisplayDepartment" class="profile-value">
+                                    Python Developer
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =================================================
+                 SECURITY
+                 ================================================= -->
+
+            <div class="col-12">
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h5 class="mb-1">
+                                Security
+                            </h5>
+
+                            <p class="text-muted small mb-0">
+                                Manage Your Account Security
+                            </p>
+
+                        </div>
+
+                        <i class="bi bi-shield-lock card-header-icon"></i>
+
+                    </div>
+
+
+                    <div class="card-body">
+
+                        <div class="security-row">
+
+
+                            <div class="security-info">
+
+                                <div class="security-icon">
+
+                                    <i class="bi bi-key"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <h6>
+                                        Password
+                                    </h6>
+
+                                    <p>
+                                        Keep Your Account Secure By
+                                        Updating Your Password Regularly.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                class="btn btn-outline-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#passwordModal">
+
+                                Change Password
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<!-- =====================================================
+     EDIT PROFILE MODAL
+     ===================================================== -->
+
+<div
+    class="modal fade"
+    id="editProfileModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Edit Profile
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <form id="editProfileForm">
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Anagha Prasanna Pothi"
+                            id="profileName">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            value="angha@hourlyrecruit.com"
+                            id="profileEmail">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Department
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Technology"
+                            id="profileDepartment">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Technology
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            value="Project Managemnet"
+                            id="profileTechnology">
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-dismiss="modal">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="saveProfileBtn">
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CHANGE PASSWORD MODAL
+     ===================================================== -->
+
+<div
+    class="modal fade"
+    id="passwordModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Change Password
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <form id="passwordForm">
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Current Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="currentPassword"
+                            placeholder="Enter current password">
+                        <button type="button" class="password-toggle" data-target="currentPassword" aria-label="Show current password"><i class="bi bi-eye"></i></button>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="newPassword"
+                            placeholder="Enter new password">
+                        <button type="button" class="password-toggle" data-target="newPassword" aria-label="Show new password"><i class="bi bi-eye"></i></button>
+
+                        <div class="password-strength" aria-live="polite">
+                            <div class="password-strength-header"><span>Password Strength</span><strong id="passwordStrengthLabel">-</strong></div>
+                            <div class="password-strength-track"><span id="passwordStrengthBar"></span></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Confirm New Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="confirmPassword"
+                            placeholder="Confirm new password">
+                        <button type="button" class="password-toggle" data-target="confirmPassword" aria-label="Show confirm password"><i class="bi bi-eye"></i></button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-dismiss="modal">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="changePasswordBtn">
+
+                    Update Password
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CHANGE PHOTO MODAL
+     ===================================================== -->
+
+<div
+    class="modal fade"
+    id="photoModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Change Profile Photo
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <label class="form-label">
+                    Select Profile Photo
+                </label>
+
+                <input
+                    type="file"
+                    class="form-control"
+                    id="profilePhoto"
+                    accept="image/*">
+
+                <small class="text-muted">
+                    JPG or PNG image recommended.
+                </small>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-dismiss="modal">
+
+                    Cancel
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="savePhotoBtn">
+
+                    Save Photo
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BOOTSTRAP
+     ===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="js/app.js"></script>
+
+
+<!-- =====================================================
+     PROFILE JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".password-toggle").forEach(function (button) {
+        button.addEventListener("click", function () {
+            const input = document.getElementById(button.dataset.target);
+            const icon = button.querySelector("i");
+            const visible = input.type === "text";
+            input.type = visible ? "password" : "text";
+            icon.className = visible ? "bi bi-eye" : "bi bi-eye-slash";
+            button.setAttribute("aria-label", (visible ? "Show " : "Hide ") + input.id);
+        });
+    });
+
+    const newPasswordInput = document.getElementById("newPassword");
+    const strengthLabel = document.getElementById("passwordStrengthLabel");
+    const strengthBar = document.getElementById("passwordStrengthBar");
+    if (newPasswordInput && strengthLabel && strengthBar) {
+        newPasswordInput.addEventListener("input", function () {
+            const value = newPasswordInput.value;
+            const score = (value.length >= 8 ? 1 : 0) + (/[A-Z]/.test(value) ? 1 : 0) + (/[a-z]/.test(value) ? 1 : 0) + (/[0-9!@#$%^&*]/.test(value) ? 1 : 0);
+            const strength = value.length < 6 || score < 2 ? ["Weak", "30%"] : score < 4 ? ["Medium", "65%"] : ["Strong", "100%"];
+            strengthLabel.textContent = value ? strength[0] : "-";
+            strengthBar.style.width = value ? strength[1] : "0%";
+            strengthBar.dataset.strength = value ? strength[0].toLowerCase() : "";
+        });
+    }
+
+
+    /* =================================================
+       EDIT PROFILE
+       ================================================= */
+
+    const saveProfileBtn = document.getElementById("saveProfileBtn");
+
+    if (saveProfileBtn) {
+        saveProfileBtn.addEventListener("click", function () {
+            const name = (document.getElementById("profileName")?.value || "").trim();
+            const email = (document.getElementById("profileEmail")?.value || "").trim();
+            const department = (document.getElementById("profileDepartment")?.value || "").trim();
+            const technology = (document.getElementById("profileTechnology")?.value || "").trim();
+
+            if (!name || !email) {
+                if (typeof showToast === "function") {
+                    showToast("Please enter name and email.", "warning");
+                }
+                return;
+            }
+
+            // Update header and card fields using IDs where available
+            const headerName = document.getElementById("profileHeaderName");
+            if (headerName) headerName.innerText = name;
+
+            const headerEmail = document.getElementById("profileHeaderEmail");
+            if (headerEmail) headerEmail.innerHTML = '<i class="bi bi-envelope me-1"></i> ' + email;
+
+            const fullNameDisplay = document.getElementById("profileFullName");
+            if (fullNameDisplay) fullNameDisplay.innerText = name;
+
+            const emailDisplay = document.getElementById("profileEmailDisplay");
+            if (emailDisplay) emailDisplay.innerText = email;
+
+            const deptDisplay = document.getElementById("profileDisplayDepartment");
+            if (deptDisplay) deptDisplay.innerText = department;
+
+            const techDisplay = document.getElementById("profileDisplayTechnology");
+            if (techDisplay) techDisplay.innerText = technology;
+
+            // Close modal safely
+            const modalEl = document.getElementById("editProfileModal");
+            if (modalEl) {
+                let modal = bootstrap.Modal.getInstance(modalEl);
+                if (!modal) modal = new bootstrap.Modal(modalEl);
+                modal.hide();
+            }
+
+            if (typeof showToast === "function") showToast("Profile updated successfully.", "success");
+        });
+    }
+
+
+    /* =================================================
+       CHANGE PASSWORD
+       ================================================= */
+
+    const changePasswordBtn =
+        document.getElementById(
+            "changePasswordBtn"
+        );
+
+
+    changePasswordBtn.addEventListener(
+        "click",
+        function () {
+
+            const current =
+                document.getElementById(
+                    "currentPassword"
+                ).value;
+
+
+            const newPassword =
+                document.getElementById(
+                    "newPassword"
+                ).value;
+
+
+            const confirmPassword =
+                document.getElementById(
+                    "confirmPassword"
+                ).value;
+
+
+            if (
+                !current ||
+                !newPassword ||
+                !confirmPassword
+            ) {
+
+                if (
+                    typeof showToast === "function"
+                ) {
+
+                    showToast(
+                        "Please fill all password fields.",
+                        "warning"
+                    );
+
+                }
+
+                return;
+
+            }
+
+
+            if (newPassword !== confirmPassword) {
+
+                if (
+                    typeof showToast === "function"
+                ) {
+
+                    showToast(
+                        "New passwords do not match.",
+                        "danger"
+                    );
+
+                }
+
+                return;
+
+            }
+
+
+            if (newPassword.length < 6) {
+
+                if (
+                    typeof showToast === "function"
+                ) {
+
+                    showToast(
+                        "Password must contain at least 6 characters.",
+                        "warning"
+                    );
+
+                }
+
+                return;
+
+            }
+
+
+            const modal =
+                bootstrap.Modal.getInstance(
+                    document.getElementById(
+                        "passwordModal"
+                    )
+                );
+
+
+            modal.hide();
+
+
+            document
+                .getElementById("passwordForm")
+                .reset();
+
+
+            if (
+                typeof showToast === "function"
+            ) {
+
+                showToast(
+                    "Password updated successfully.",
+                    "success"
+                );
+
+            }
+
+        }
+    );
+
+
+    /* =================================================
+       CHANGE PHOTO
+       ================================================= */
+
+    const changePhotoBtn =
+        document.getElementById(
+            "changePhotoBtn"
+        );
+
+
+    changePhotoBtn.addEventListener(
+        "click",
+        function () {
+
+            const modal =
+                new bootstrap.Modal(
+                    document.getElementById(
+                        "photoModal"
+                    )
+                );
+
+
+            modal.show();
+
+        }
+    );
+
+
+    /* =================================================
+       SAVE PHOTO
+       ================================================= */
+
+    document
+        .getElementById("savePhotoBtn")
+        .addEventListener(
+            "click",
+            function () {
+
+                const file =
+                    document.getElementById(
+                        "profilePhoto"
+                    ).files[0];
+
+
+                if (!file) {
+
+                    if (
+                        typeof showToast === "function"
+                    ) {
+
+                        showToast(
+                            "Please select a profile photo.",
+                            "warning"
+                        );
+
+                    }
+
+                    return;
+
+                }
+
+
+                const reader =
+                    new FileReader();
+
+
+                reader.onload =
+                    function (event) {
+
+                        const avatars =
+                            document.querySelectorAll(
+                                ".profile-avatar"
+                            );
+
+
+                        localStorage.setItem("flowdeskEmployeePhoto", event.target.result);
+
+                        document.querySelectorAll(".employee-avatar-sync").forEach(
+                            function (avatar) {
+
+                                avatar.innerHTML =
+                                    '<img src="' +
+                                    event.target.result +
+                                    '" alt="Profile Photo">';
+
+                            }
+                        );
+
+
+                        const modal =
+                            bootstrap.Modal.getInstance(
+                                document.getElementById(
+                                    "photoModal"
+                                )
+                            );
+
+
+                        modal.hide();
+
+
+                        if (
+                            typeof showToast === "function"
+                        ) {
+
+                            showToast(
+                                "Profile photo updated.",
+                                "success"
+                            );
+
+                        }
+
+                    };
+
+
+                reader.readAsDataURL(file);
+
+            }
+        );
+
+
+});
+
+</script>
+
+<script>
+// Save profile changes from Edit Profile modal into the visible profile view
+document.getElementById('saveProfileBtn')?.addEventListener('click', function () {
+    var name = (document.getElementById('profileName')?.value || '').trim();
+    var email = (document.getElementById('profileEmail')?.value || '').trim();
+    var dept = (document.getElementById('profileDepartment')?.value || '').trim();
+    var tech = (document.getElementById('profileTechnology')?.value || '').trim();
+
+    if (name) {
+        var h = document.getElementById('profileHeaderName');
+        if (h) h.innerText = name;
+        var f = document.getElementById('profileFullName');
+        if (f) f.innerText = name;
+    }
+
+    if (email) {
+        var he = document.getElementById('profileHeaderEmail');
+        if (he) he.innerHTML = '<i class="bi bi-envelope me-1"></i> ' + email;
+        var ed = document.getElementById('profileEmailDisplay');
+        if (ed) ed.innerText = email;
+    }
+
+    if (dept) {
+        var pd = document.getElementById('profileDisplayDepartment');
+        if (pd) pd.innerText = dept;
+    }
+
+    if (tech) {
+        var pt = document.getElementById('profileDisplayTechnology');
+        if (pt) pt.innerText = tech;
+    }
+
+    // hide modal using Bootstrap API
+    var modalEl = document.getElementById('editProfileModal');
+    if (modalEl) {
+        var modal = bootstrap.Modal.getInstance(modalEl);
+        if (!modal) modal = new bootstrap.Modal(modalEl);
+        modal.hide();
+    }
+
+    if (typeof showToast === 'function') {
+        showToast('Profile updated successfully.', 'success');
+    }
+});
+</script>
+
+</body>
+
+</html>
